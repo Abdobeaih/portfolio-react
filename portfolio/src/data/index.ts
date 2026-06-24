@@ -29,13 +29,7 @@ export const PROJECTS = [
     tags: ["Node.js", "Prisma", "PostgreSQL", "Zustand", "Vite"],
     link: "https://github.com/Abdobeaih",
   },
-  {
-    title: "FreelancePro – SaaS Platform",
-    badge: "Supabase · MERN",
-    desc: "Extended with Supabase JWT auth, RLS, and real-time subscriptions, then converted to full MERN stack with Mongoose models and Express routes.",
-    tags: ["Supabase", "MERN", "Express", "MongoDB"],
-    link: "https://github.com/Abdobeaih",
-  },
+
   {
     title: "Fresh Bites – Restaurant Website",
     badge: "Frontend · Lighthouse 90+",
@@ -43,13 +37,7 @@ export const PROJECTS = [
     tags: ["HTML5", "CSS3", "JavaScript", "Netlify"],
     link: "https://github.com/Abdobeaih",
   },
-  {
-    title: "مستقلين (Mustakileen) Platform",
-    badge: "React · Migration",
-    desc: "Migrated CDN-based React to Vite + React Router with full component separation, admin dashboard at /admin with sidebar, topbar and charts. Dark/gold/cream theme.",
-    tags: ["Vite", "React Router", "Admin UI", "Dark Theme"],
-    link: "https://github.com/Abdobeaih",
-  },
+
 ];
 
 export const EXPERIENCE = [
