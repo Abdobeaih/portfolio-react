@@ -35,9 +35,12 @@ export function AIChat() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const messagesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messagesRef.current) {
+      messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+    }
   }, [messages]);
 
   const send = useCallback(async () => {
@@ -87,7 +90,7 @@ export function AIChat() {
       </div>
 
       {/* Messages */}
-      <div className="p-4 min-h-[200px] max-h-[300px] overflow-y-auto flex flex-col gap-3">
+      <div ref={messagesRef} className="p-4 min-h-[200px] max-h-[300px] overflow-y-auto flex flex-col gap-3">
         {messages.map((m, i) => (
           <motion.div
             key={i}
